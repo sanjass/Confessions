@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<a href="post_new">Post a new confession!!!</a>
+<br>
+
+{% for post in confessions %}
+	<h4>Posted at: {{ post.post_date.strftime('%B %d %Y at %H:%M') }}</h4>
+	<p>{{ post.text }}</p>
+	<br>
+	<br>
+{% endfor %}
+</center>
+
+
+
+</body>
+</html>
