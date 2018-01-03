@@ -15,8 +15,6 @@ def before_request():
 def after_request(exception):
 	db.close()
 
-
-
 @app.route('/')
 def index():
 	return render_template('home.html', confessions=Confession.select().order_by(Confession.post_date.desc()))
