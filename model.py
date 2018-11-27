@@ -1,7 +1,7 @@
 from peewee import *
 import datetime
 
-db=MySQLDatabase('conf',user='root', passwd='matematika4')
+db=MySQLDatabase('conf',user='root', passwd='***')
 
 class Confession(Model):
 	id=PrimaryKeyField()
